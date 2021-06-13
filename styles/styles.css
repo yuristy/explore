@@ -20,7 +20,7 @@ nav {
 
 .container img {
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   position: absolute;
   object-fit: cover;
   z-index: -1;
@@ -40,40 +40,48 @@ nav {
   background: rgb(29, 29, 29);
   min-height: 100vh;
   z-index: 2;
+  position: absolute;
 }
 
 .content-images {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
-  height: 60vh;
+  height: 100%;
+  margin-top: 50px 0;
   text-align: center;
 }
+
+
 
 .content-images img {
   width: 250px;
   height: 150px;
   object-fit: cover;
+  margin-top: 20px;
 }
 
-h3, h4 {
-    padding: 0rem 2rem;
+h3,
+h4 {
+  padding: 0rem 2rem;
 }
 
 .text {
-  padding: 2rem 8rem;
+    padding: 2rem 8rem;
   font-size: 1rem;
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 650px) {
   .content-images {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    flex-wrap: nowrap;
   }
 
+
   .text {
-    padding: 3rem 2rem;
+    padding: 3rem 3rem;
     font-size: 1.2rem;
   }
 }
